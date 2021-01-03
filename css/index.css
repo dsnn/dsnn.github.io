@@ -1,0 +1,234 @@
+/* 
+General styles 
+--------------------------------------------------------------------------------
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, system-ui, sans-serif;
+  color: white;
+  background-color: rgb(17, 18, 22);
+}
+
+/* 
+Element styles 
+--------------------------------------------------------------------------------
+*/
+
+p {
+  line-height: 1.45;
+}
+
+a[href],
+a[href]:visited {
+  color: white;
+}
+
+pre,
+code {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
+    "Courier New", Courier, monospace;
+  line-height: 1.5;
+}
+pre {
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 1em;
+  margin: 0.5em 0;
+  background-color: #f6f6f6;
+}
+
+/* 
+Highlight 
+--------------------------------------------------------------------------------
+*/
+
+.highlight-line {
+  display: block;
+  padding: 0.125em 1em;
+  text-decoration: none; /* override del, ins, mark defaults */
+  color: inherit; /* override del, ins, mark defaults */
+}
+
+/* allow highlighting empty lines */
+.highlight-line:empty:before {
+  content: " ";
+}
+/* avoid double line breaks when using display: block; */
+.highlight-line + br {
+  display: none;
+}
+
+.highlight-line-isdir {
+  color: #b0b0b0;
+  background-color: #222;
+}
+.highlight-line-active {
+  background-color: #444;
+  background-color: hsla(0, 0%, 27%, 0.8);
+}
+.highlight-line-add {
+  background-color: #45844b;
+}
+.highlight-line-remove {
+  background-color: #902f2f;
+}
+
+/* 
+Layout container
+--------------------------------------------------------------------------------
+*/
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 42rem;
+  padding: 2.625rem 1.3125rem;
+}
+
+/* 
+Header & Navigation
+--------------------------------------------------------------------------------
+*/
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1 0 250px;
+  font-size: 16px;
+  justify-content: flex-start;
+}
+
+.logo :link:not(:hover) {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+}
+
+.nav-item {
+  flex: 0 0 80px;
+}
+
+.nav-item a[href]:not(:hover) {
+  text-decoration: none;
+}
+.nav-item-active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* 
+Main
+--------------------------------------------------------------------------------
+*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+Direct Links / Markdown Headers
+--------------------------------------------------------------------------------
+*/
+.direct-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  margin-left: 0.1em;
+}
+
+a[href].direct-link,
+a[href].direct-link:visited {
+  color: transparent;
+}
+
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+  color: #aaa;
+}
+
+/* 
+Post & post list
+--------------------------------------------------------------------------------
+*/
+
+.postlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.postlist-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.postlist-date {
+  width: 150px;
+  padding-right: 8px;
+}
+
+.postlist-link {
+  flex: 1 0 auto;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+/* 
+Tags
+--------------------------------------------------------------------------------
+*/
+
+.post-tag {
+  flex: 0 0 auto;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 2px 4px;
+  background-color: #00806f;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.tag-list-item {
+  margin: 3px 0;
+  text-decoration: none;
+}
+
+.tag-list-item:hover {
+  text-decoration: underline;
+}

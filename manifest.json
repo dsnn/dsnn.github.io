@@ -1,0 +1,23 @@
+{
+  "name": "Conny Abrahamsson",
+  "lang": "en",
+  "orientation": "portrait-primary",
+  "short_name": "Conny Abrahamsson",
+  "description": "Just my simple blog and personal notes",
+  "start_url": "https://www.connyabrahamsson.com/",
+  "background_color": "#111216",
+  "theme_color": "#111216",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/img/splash.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

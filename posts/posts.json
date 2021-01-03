@@ -1,0 +1,7 @@
+{
+  "tags": ["posts"],
+  "sitemap": {
+    "changefreq": "monthly",
+    "priority": "0.75"
+  }
+}
