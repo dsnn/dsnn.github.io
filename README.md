@@ -2,11 +2,14 @@
 
 ## TODO
 
-- Dark mode toggle
-- Add Normalize.css
-- Logo blinks on navigate, something that can be fixed?
-- Test image Optimizations
-- Serviceworker? (this is not a PWA but fun with all green in lighthouse)
+- rename website to dsnn.io
+- cleanup test posts
+- install and configure gh-pages for release managment
+- dark mode toggle
+- add Normalize.css
+- logo blinks on navigate, something that can be fixed?
+- test image Optimizations
+- serviceworker? (this is not a PWA but fun with all green in lighthouse)
 
 ## Links
 
